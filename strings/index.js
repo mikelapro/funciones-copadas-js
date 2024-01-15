@@ -64,3 +64,61 @@ const arrayFrutas = ["Banana", "Orange", "Apple", "Mango"];
 const frutas = arrayFrutas.join( '|' );
 
 console.log( frutas );
+
+// toUpperCase
+// Convierte una cadena en letras mayúsculas.
+const nombreCompleto4 = 'Mikaela Camila Somma';
+const nombreCompletoMayuscula = nombreCompleto4.toUpperCase( nombreCompleto4 );
+
+console.log( nombreCompletoMayuscula ); // MIKAELA CAMILA SOMMA
+
+// toLowerCase
+// Convierte una cadena en letras minúsculas.
+const nombreCompletoMinuscula = nombreCompleto4.toLowerCase( nombreCompleto4 );
+
+console.log( nombreCompletoMinuscula ); // mikaela camila somma
+
+// trim
+// Elimina los espacios en blanco de ambos lados de una cadena.
+const nombreCompleto5 = '   Mikaela Camila Somma   ';
+
+console.log( nombreCompleto5 ); // '   Mikaela Camila Somma   '
+console.log( nombreCompleto5.trim() ); // 'Mikaela Camila Somma'
+console.log( nombreCompleto5 )
+
+// trimStart
+// Elimina los espacios en blanco del principio de una cadena.
+console.log( nombreCompleto5 ); // '   Mikaela Camila Somma   '
+console.log( nombreCompleto5.trimStart() ); // 'Mikaela Camila Somma   '
+
+
+// trimEnd
+// Elimina los espacios en blanco del final de una cadena.
+console.log( nombreCompleto5 ); // '   Mikaela Camila Somma   '
+console.log( nombreCompleto5.trimEnd() ); // '   Mikaela Camila Somma'
+
+// replace
+// Reemplaza lo del primer parametro en la cadena (solo la primera aparición).
+const nombreCompleto6 = 'Esteban Camila Somma';
+console.log( nombreCompleto6.replace( 'Esteban', 'Mikaela' ) ); // Mikaela Camila Somma
+
+let frase1 = 'Se tomo 1 helado';
+//let frase2 = frase.replace( '1', 'un' );
+frase1 = frase1.replace( '1', 'un' ); // [!] No es obligatorio asignarlo a una variable nueva.
+console.log(frase1);
+
+// replaceAll
+// Reemplaza lo del primer parametro en toda la cadena.
+let frase2 = 'a b c d e f';
+let frase2a = frase2.replace( ' ', '' );
+let frase2b = frase2.replaceAll( ' ', '' );
+console.log( `${frase2} => ${frase2a}` ); // ab c d e f
+console.log( `${frase2} => ${frase2b}` ); // abcdef
+
+// includes
+// Devuelve verdadero si una cadena contiene una cadena especificada. De lo contrario
+// devuelve falso.
+const nombreCompleto7 = 'Mikaela Camila Somma';
+
+console.log( nombreCompleto7.includes( 'Camila' ) ); // true.
+console.log( nombreCompleto7.includes( 'Esteban' ) ); // false.
