@@ -104,7 +104,7 @@ console.log( nombreCompleto6.replace( 'Esteban', 'Mikaela' ) ); // Mikaela Camil
 
 let frase1 = 'Se tomo 1 helado';
 //let frase2 = frase.replace( '1', 'un' );
-frase1 = frase1.replace( '1', 'un' ); // [!] No es obligatorio asignarlo a una variable nueva.
+frase1 = frase1.replace( '1', 'un' ); // ! No es obligatorio asignarlo a una variable nueva.
 console.log(frase1);
 
 // replaceAll
@@ -122,3 +122,13 @@ const nombreCompleto7 = 'Mikaela Camila Somma';
 
 console.log( nombreCompleto7.includes( 'Camila' ) ); // true.
 console.log( nombreCompleto7.includes( 'Esteban' ) ); // false.
+
+// Math.ramdom / Math.floor
+// devuelve un número aleatorio inferior a 1.
+
+Math.random(); // Ej: 0.7419457280290496
+
+// * Math.random usado con Math.floor se puede usar para devolver números enteros aleatorios.
+Math.floor( Math.random() * 21 ); // Números aleatorios del 0 al 20.
+
+Math.floor( Math.random() * 20 ) + 10; // Números aleatorios del 10 al 20 (ambos incluidos).
